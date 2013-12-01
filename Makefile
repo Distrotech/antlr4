@@ -9,7 +9,7 @@ all: $(ANTLR)
 
 install: all
 	install -d $(DESTDIR)$(JARDIR)
-	install -t $(DESTDIR)$(JARDIR) $(ANTLR)
+	install -m 644 -t $(DESTDIR)$(JARDIR) $(ANTLR)
 
 clean:
 	ant clean
